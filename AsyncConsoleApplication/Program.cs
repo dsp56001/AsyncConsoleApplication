@@ -15,8 +15,6 @@ namespace AsyncConsoleApplication
         static StringBuilder sb;
         
 
-
-
         static unsafe void Main(string[] args)
         {
             long count = 200000000;
@@ -97,8 +95,8 @@ namespace AsyncConsoleApplication
             LogEnd();
 
             //Images
-            Image img = Image.FromFile("imageBig.jpg");
-            Image imgSmall = Image.FromFile("imageSmall.jpg");
+            var img = Bitmap.FromFile("imageBig.jpg");
+            var imgSmall = Bitmap.FromFile("imageSmall.jpg");
 
             //get byte array
             byte[] arr;
